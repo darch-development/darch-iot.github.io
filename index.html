@@ -1,52 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/stylesheet.css">
     <title>Darch</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
-        body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #f5f5f5;
-        }
-
-        div {
-            font-size: 64px;
-            color: #333;
-            font-family: 'Poppins';
-        }
-    </style>
 </head>
 <body>
-    <div>
-        <span id="blnk"></span>Loading<span id="loading"></span>
-    </div>
-    <script>
-        let count = 0;
-        let loading = document.getElementById('loading');
-        let blnk = document.getElementById('blnk');
-        setInterval(() => {
-            loading.innerHTML = "";
-            for (let i = 0; i < count; i++) {
-                loading.innerHTML += '.';
-                blnk.style.width = i * 8 + "px";
-            }
-            if (count < 3) {
-            count++;
-        } else {
-            count = 0;
-        }
-        }, 1000);
-        
-    </script>
+    <nav>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">IoT Networks</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <header></header>
+    <main></main>
 </body>
 </html>
