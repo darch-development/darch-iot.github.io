@@ -4,17 +4,17 @@
     // background-color: red;
     width: fit-content;
     &__container {
-        width: fit-content;
+        width: $screen-m;
         display: flex;
         align-items: center;
-        gap: 2em;
+        justify-content: space-between;
+        padding-left: 2em;
+        padding-right: 2em;
         &__logo {
-            width: 500px;
             display: flex;
-            a {
-                text-decoration: none;
-                color: $glow-r;
-            }
+            text-decoration: none;
+            color: $glow-r;
+
             div {
                 display: flex;
                 flex-direction: column;
@@ -23,21 +23,31 @@
                 height: 48px;
                 }
                 div {
+                    font-size: 12px;
                     padding-top: 2px;
-                    font-weight: 500;
+                    font-weight: 600;
                     font-family: 'audiowide';
                     text-decoration: none;
+                    color: $glow-r;
                 }
             }
             
         }
-        &__item {
-            list-style-type: none;
-            a {
-                text-decoration: none;
-                color: $text-primary;
+        &__list {
+            display: flex;
+            flex-direction: row;
+            gap: 2em;
+            &__item {
+                list-style-type: none;
+                a {
+                    text-decoration: none;
+                    color: $text-secondary;
+                    transition: all 200ms ease-in-out;
+                    &:hover {
+                        color: $text-primary;
+                    }
+                }
             }
-
         }
     }
 }

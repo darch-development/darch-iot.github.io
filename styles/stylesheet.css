@@ -45,31 +45,40 @@ input {
   height: 6em;
   width: fit-content; }
   .navbar__container {
-    width: fit-content;
+    width: 1024px;
     display: flex;
     align-items: center;
-    gap: 2em; }
+    justify-content: space-between;
+    padding-left: 2em;
+    padding-right: 2em; }
     .navbar__container__logo {
-      width: 500px;
-      display: flex; }
-      .navbar__container__logo a {
-        text-decoration: none;
-        color: #A80F35; }
+      display: flex;
+      text-decoration: none;
+      color: #A80F35; }
       .navbar__container__logo div {
         display: flex;
         flex-direction: column; }
         .navbar__container__logo div img {
           height: 48px; }
         .navbar__container__logo div div {
+          font-size: 12px;
           padding-top: 2px;
-          font-weight: 500;
+          font-weight: 600;
           font-family: 'audiowide';
-          text-decoration: none; }
-    .navbar__container__item {
-      list-style-type: none; }
-      .navbar__container__item a {
-        text-decoration: none;
-        color: #FEFEFE; }
+          text-decoration: none;
+          color: #A80F35; }
+    .navbar__container__list {
+      display: flex;
+      flex-direction: row;
+      gap: 2em; }
+      .navbar__container__list__item {
+        list-style-type: none; }
+        .navbar__container__list__item a {
+          text-decoration: none;
+          color: #DADADA;
+          transition: all 200ms ease-in-out; }
+          .navbar__container__list__item a:hover {
+            color: #FEFEFE; }
 
 body {
   font-family: 'roboto', sans-serif;
