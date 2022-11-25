@@ -1,0 +1,43 @@
+.navbar {
+    margin: 0 auto;
+    height: 6em;
+    // background-color: red;
+    width: fit-content;
+    &__container {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        gap: 2em;
+        &__logo {
+            width: 500px;
+            display: flex;
+            a {
+                text-decoration: none;
+                color: $glow-r;
+            }
+            div {
+                display: flex;
+                flex-direction: column;
+
+                img {
+                height: 48px;
+                }
+                div {
+                    padding-top: 2px;
+                    font-weight: 500;
+                    font-family: 'audiowide';
+                    text-decoration: none;
+                }
+            }
+            
+        }
+        &__item {
+            list-style-type: none;
+            a {
+                text-decoration: none;
+                color: $text-primary;
+            }
+
+        }
+    }
+}
