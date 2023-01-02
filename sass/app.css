@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none; }
+
+footer, header, nav, section, main {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0; }
+
+.navbar {
+  margin: 0 auto;
+  height: 6em;
+  max-width: 1160px; }
+  .navbar__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2em;
+    padding-right: 2em; }
+    .navbar__container__logo {
+      display: flex;
+      text-decoration: none;
+      color: #A80F35; }
+      .navbar__container__logo div {
+        display: flex;
+        flex-direction: column; }
+        .navbar__container__logo div img {
+          height: 48px; }
+        .navbar__container__logo div div {
+          font-size: 12px;
+          padding-top: 2px;
+          font-weight: 600;
+          font-family: 'audiowide';
+          text-decoration: none;
+          color: #A80F35; }
+    .navbar__container__list {
+      display: flex;
+      flex-direction: row;
+      gap: 2em; }
+      .navbar__container__list__item {
+        list-style-type: none; }
+        .navbar__container__list__item a {
+          text-decoration: none;
+          color: #DADADA;
+          transition: all 200ms ease-in-out; }
+          .navbar__container__list__item a:hover {
+            color: #FEFEFE; }
+
+.header__container {
+  display: flex;
+  flex-direction: row; }
+  .header__container__text {
+    width: 50vw;
+    padding-top: 7em;
+    padding-left: 9vw;
+    color: #FEFEFE; }
+    .header__container__text h1 {
+      line-height: 1.25;
+      font-size: clamp(34px, 6vw, 64px);
+      font-weight: 700; }
+    .header__container__text p {
+      line-height: 1.5;
+      color: #9A9A9A;
+      width: 31em;
+      height: 12em;
+      display: flex;
+      align-items: center; }
+    .header__container__text button {
+      color: #FEFEFE;
+      border-radius: 8px;
+      background: linear-gradient(270deg, #4542D5 0%, #86116C 100%);
+      padding: 1em 3em;
+      border: none; }
+  .header__container__image {
+    width: 100%;
+    margin-left: 4em;
+    border-radius: 8px;
+    border: 1px solid #888;
+    background: linear-gradient(rgba(0, 0, 0, 0), #13121D), url(../../src/luke-chesser-JKUTrJ4vK00-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+body {
+  font-family: 'Poppins', 'roboto', sans-serif;
+  background-color: #13121D; }
+
+/*# sourceMappingURL=app.css.map */
