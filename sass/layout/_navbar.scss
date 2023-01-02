@@ -2,14 +2,13 @@
     margin: 0 auto;
     height: 6em;
     // background-color: red;
-    width: fit-content;
+    max-width: $screen-l;
     &__container {
-        width: $screen-m;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-left: 2em;
-        padding-right: 2em;
+        padding: 0 2em;
         &__logo {
             display: flex;
             text-decoration: none;
@@ -47,6 +46,16 @@
                         color: $text-primary;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $screen-m) {
+    .navbar {
+        &__container {
+            &__list {
+                display: none;
             }
         }
     }
