@@ -1,6 +1,7 @@
 .navbar {
     margin: 0 auto;
     height: 6em;
+    z-index: 10;
     // background-color: red;
     max-width: $screen-l;
     &__container {
@@ -32,6 +33,55 @@
             }
             
         }
+
+        &__menu {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            &__wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 3px;
+                &__item {
+                    transition: all 250ms ease-in-out;
+                    position: relative;
+                    width: 30px;
+                    display: block;
+                    border-radius: 3px;
+                    height: 5px;
+                    background-color: white;
+                    bottom: 0;
+                }
+            }
+
+            &.active {
+                span {
+                    &:nth-of-type(1) {
+                        transform: rotate(45deg);
+                        bottom: -0.5em;
+                    }
+                    &:nth-of-type(2) {
+                        width: 30px;
+                        transition: all 250ms ease-in-out 10ms;
+                        width: 0;
+                    }
+                    &:nth-of-type(3) {
+                        bottom: 0.5em;
+                        transform: rotate(-45deg);
+                    }
+                }
+
+            }
+
+            :hover {
+                cursor: pointer;
+            }
+
+            
+        }
         &__list {
             display: flex;
             flex-direction: row;
@@ -53,7 +103,32 @@
 
 @media screen and (max-width: $screen-m) {
     .navbar {
+        height: 4.5em;
         &__container {
+            padding: 0 1em;
+            &__logo {
+                display: flex;
+                text-decoration: none;
+                color: $glow-r;
+    
+                div {
+                    display: flex;
+                    flex-direction: row;
+    
+                    img {
+                    height: 24px;
+                    }
+                    div {
+                        padding-left: 1em;
+                        font-size: 18px;
+                        padding-top: 2px;
+                        font-weight: 900;
+                        font-family: 'audiowide';
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
             &__list {
                 display: none;
             }
