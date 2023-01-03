@@ -72,6 +72,7 @@ input {
       width: 48px;
       height: 48px;
       display: flex;
+      visibility: hidden;
       flex-direction: column;
       align-items: center;
       justify-content: center; }
@@ -135,6 +136,8 @@ input {
             font-family: 'audiowide';
             text-decoration: none;
             color: white; }
+      .navbar__container__menu {
+        visibility: visible; }
       .navbar__container__list {
         display: none; } }
 body {

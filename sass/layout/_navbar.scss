@@ -38,6 +38,7 @@
             width: 48px;
             height: 48px;
             display: flex;
+            visibility: hidden;
             flex-direction: column;
             align-items: center;
             justify-content: center;
@@ -128,6 +129,9 @@
                         color: white;
                     }
                 }
+            }
+            &__menu {
+                visibility: visible;
             }
             &__list {
                 display: none;
